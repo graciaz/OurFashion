@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OUR FASHION - fait main depuis 1997</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- UIKIT framework -->
+        <link rel="stylesheet" href="css/uikit.css" />
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+        <!-- Custom JS and CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+
+        <style type="text/css">
+            * {
+                transition: all .3s;
+            }
+
+            .uk-button-default {
+                border: 0;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!-- Desktop Navbar -->
+        <div class="uk-container uk-visible@s">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <!-- Logo -->
+                    <a class="uk-navbar-item uk-logo" style="font-weight: lighter;" href="index.html">OUR FASHION</a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <!-- Menu goes here -->
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li class="uk-active uk-text-bold"><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Navbar -->
+        <div class="uk-container uk-hidden@s">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <!-- Logo -->
+                    <a class="uk-navbar-item uk-logo" style="font-weight: lighter;" href="index.html">OUR FASHION</a>
+                </div>
+
+                <div class="uk-navbar-right">
+                            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav" uk-navbar-toggle-icon href="#"></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Offcanvas / Hamburger Menu -->
+        <div id="offcanvas-nav" class="uk-background-muted" uk-offcanvas="flip: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-margin-medium-top">
+                    <!-- close button -->
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <!-- Menu goes here -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li class="uk-active uk-text-bold"><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- END navbar -->
+
+        <section id="gallery">
+
+            <div class="uk-width-1-1">
+                <h1 class="uk-text-bold" style="padding-top: 1rem; text-align: center;">OUR PORTFOLIO</h1>
+                <p style="text-align: center;">"Fashion is something that comes from within you" <br>- Ralph Lauren</p>
+            </div>
+
+            <hr>
+
+            <div class="sort" style="text-align: center;">
+
+                <button class="uk-button uk-button-default" id="filter-a" onclick="show('all')">Show All</button>
+                <button class="uk-button uk-button-default" id="filter-1" onclick="show('1')">80s era at the blitz club</button>
+                <button class="uk-button uk-button-default" id="filter-3" onclick="show('3')">minimal collection x coppia brand 1st</button>
+                <button class="uk-button uk-button-default" id="filter-4" onclick="show('4')">minimal collection x coppia brand 2nd</button>
+                <button class="uk-button uk-button-default" id="filter-2" onclick="show('2')">girlish</button>
+                <button class="uk-button uk-button-default" id="filter-5" onclick="show('5')">velvet</button>
+                <button class="uk-button uk-button-default" id="filter-6" onclick="show('6')">immortal joe</button>
+
+            </div>
+
+            <hr>
+
+            <div class="grid" id="g-all" uk-lightbox="animation: fade">
+
+                <a class="grid-item collection-6" href="images/collection-06/01.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/01.jpg">
+                </a>
+                <a class="grid-item collection-6" href="images/collection-06/02.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/02.jpg">
+                </a>
+                <a class="grid-item collection-6" href="images/collection-06/03.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/03.jpg">
+                </a>
+                <a class="grid-item collection-6" href="images/collection-06/04.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/04.jpg">
+                </a>
+                <a class="grid-item collection-5" href="images/collection-05/01.jpg" caption="Velvet">
+                    <img src="images/collection-05/01.jpg">
+                </a>
+                <a class="grid-item collection-5" href="images/collection-05/02.jpg" caption="Velvet">
+                    <img src="images/collection-05/02.jpg">
+                </a>
+                <a class="grid-item collection-5" href="images/collection-05/03.jpg" caption="Velvet">
+                    <img src="images/collection-05/03.jpg">
+                </a>
+                <a class="grid-item collection-5" href="images/collection-05/04.jpg" caption="Velvet">
+                    <img src="images/collection-05/04.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/01.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/01.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/02.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/02.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/03.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/03.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/04.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/04.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/05.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/05.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/06.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/06.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/01.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/01.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/02.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/02.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/03.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/03.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/04.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/04.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/05.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/05.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/06.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/06.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/01.jpg" caption="Girlish">
+                    <img src="images/collection-02/01.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/02.jpg" caption="Girlish">
+                    <img src="images/collection-02/02.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/03.jpg" caption="Girlish">
+                    <img src="images/collection-02/03.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/04.jpg" caption="Girlish">
+                    <img src="images/collection-02/04.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/05.jpg" caption="Girlish">
+                    <img src="images/collection-02/05.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/06.jpg" caption="Girlish">
+                    <img src="images/collection-02/06.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/07.jpg" caption="Girlish">
+                    <img src="images/collection-02/07.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/08.jpg" caption="Girlish">
+                    <img src="images/collection-02/08.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/09.jpg" caption="Girlish">
+                    <img src="images/collection-02/09.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/10.jpg" caption="Girlish">
+                    <img src="images/collection-02/10.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/11.jpg" caption="Girlish">
+                    <img src="images/collection-02/11.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/12.jpg" caption="Girlish">
+                    <img src="images/collection-02/12.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/01.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/01.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/02.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/02.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/03.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/03.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/04.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/04.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/05.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/05.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/06.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/06.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/07.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/07.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/08.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/08.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/09.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/09.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/10.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/10.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/11.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/11.jpg">
+                </a>
+            </div>
+
+            <div class="grid" id="g-1" uk-lightbox="animation: fade">
+                <a class="grid-item collection-1" href="images/collection-01/01.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/01.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/02.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/02.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/03.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/03.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/04.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/04.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/05.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/05.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/06.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/06.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/07.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/07.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/08.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/08.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/09.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/09.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/10.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/10.jpg">
+                </a>
+                <a class="grid-item collection-1" href="images/collection-01/11.jpg" caption="80s Era at The Blitz Club">
+                    <img src="images/collection-01/11.jpg">
+                </a>
+            </div>
+
+            <div class="grid" id="g-2" uk-lightbox="animation: fade">
+                <a class="grid-item collection-2" href="images/collection-02/01.jpg" caption="Girlish">
+                    <img src="images/collection-02/01.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/02.jpg" caption="Girlish">
+                    <img src="images/collection-02/02.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/03.jpg" caption="Girlish">
+                    <img src="images/collection-02/03.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/04.jpg" caption="Girlish">
+                    <img src="images/collection-02/04.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/05.jpg" caption="Girlish">
+                    <img src="images/collection-02/05.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/06.jpg" caption="Girlish">
+                    <img src="images/collection-02/06.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/07.jpg" caption="Girlish">
+                    <img src="images/collection-02/07.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/08.jpg" caption="Girlish">
+                    <img src="images/collection-02/08.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/09.jpg" caption="Girlish">
+                    <img src="images/collection-02/09.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/10.jpg" caption="Girlish">
+                    <img src="images/collection-02/10.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/11.jpg" caption="Girlish">
+                    <img src="images/collection-02/11.jpg">
+                </a>
+                <a class="grid-item collection-2" href="images/collection-02/12.jpg" caption="Girlish">
+                    <img src="images/collection-02/12.jpg">
+                </a>
+            </div>
+
+            <div class="grid" id="g-3" uk-lightbox="animation: fade">
+                <a class="grid-item collection-3" href="images/collection-03/01.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/01.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/02.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/02.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/03.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/03.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/04.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/04.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/05.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/05.jpg">
+                </a>
+                <a class="grid-item collection-3" href="images/collection-03/06.jpg" caption="Minimal Collection X Coppia Brand 1st">
+                    <img src="images/collection-03/06.jpg">
+                </a>
+            </div>
+
+            <div class="grid" id="g-4" uk-lightbox="animation: fade">
+                <a class="grid-item collection-4" href="images/collection-04/01.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/01.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/02.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/02.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/03.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/03.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/04.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/04.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/05.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/05.jpg">
+                </a>
+                <a class="grid-item collection-4" href="images/collection-04/06.jpg" caption="Minimal Collection X Coppia Brand 2nd">
+                    <img src="images/collection-04/06.jpg">
+                </a>
+            </div>
+
+            <div class="grid" id="g-5" uk-lightbox="animation: fade">
+                <a class="grid-item collection-5" href="images/collection-05/01.jpg" caption="Velvet">
+                    <img src="images/collection-05/01.jpg">
+                </a>
+                <a class="grid-item collection-5" href="images/collection-05/02.jpg" caption="Velvet">
+                    <img src="images/collection-05/02.jpg">
+                </a>
+                <a class="grid-item collection-5" href="images/collection-05/03.jpg" caption="Velvet">
+                    <img src="images/collection-05/03.jpg">
+                </a>
+                <a class="grid-item collection-5" href="images/collection-05/04.jpg" caption="Velvet">
+                    <img src="images/collection-05/04.jpg">
+                </a>
+            </div>
+
+            <div class="grid" id="g-6" uk-lightbox="animation: fade">
+                <a class="grid-item collection-6" href="images/collection-06/01.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/01.jpg">
+                </a>
+                <a class="grid-item collection-6" href="images/collection-06/02.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/02.jpg">
+                </a>
+                <a class="grid-item collection-6" href="images/collection-06/03.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/03.jpg">
+                </a>
+                <a class="grid-item collection-6" href="images/collection-06/04.jpg" caption="Immortal Joe">
+                    <img src="images/collection-06/04.jpg">
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Footer Start HERE -->
+        <section id="footer">
+            <hr>
+            <div class="uk-container">
+                <!-- Desktop Tablet Footer -->
+                <div class="uk-width-1-1 uk-visible@s" uk-grid>
+
+                    <div class="uk-width-expand@s">
+                        <p class="uk-margin-remove" style="font-weight: lighter;">OUR FASHION</p>
+                        <p class="uk-margin-remove" style="font-size: 80%;">&copy; Copyright 2017</p>
+                    </div>
+
+                    <div class="uk-width-1-5@s uk-text-center">
+                        <a class="flink" href="index.html">Home</a><br>
+                        <a class="flink" href="portfolio.html">Portfolio</a>
+                    </div>
+
+                    <div class="uk-width-1-5@s uk-text-center">
+                        <a class="flink" href="about.html">About Us</a><br>
+                        <a class="flink" href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="uk-width-expand@s uk-text-right">
+                        <a class="flink" href=""><i uk-icon="icon: facebook"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: twitter"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mobile Footer -->
+                <div class="uk-width-1-1 uk-hidden@s uk-margin-remove" uk-grid>
+
+                    <div>
+                        <p class="uk-margin-remove" style="font-weight: lighter;">OUR FASHION</p>
+                        <p class="uk-margin-remove" style="font-size: 80%;">&copy; Copyright 2017</p>
+                    </div>
+
+                    <div class="position-right">
+                        <a class="flink" href=""><i uk-icon="icon: facebook"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: twitter"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END footer -->
+
+
+
+
+
+
+
+        <!-- Custom JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <script type="text/javascript">
+            $('#g-1').hide();
+            $('#g-2').hide();
+            $('#g-3').hide();
+            $('#g-4').hide();
+            $('#g-5').hide();
+            $('#g-6').hide();
+
+            $('#filter-a').css({ "font-weight": "bold" });
+        </script>
+    </body>
+</html>

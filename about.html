@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OUR FASHION - fait main depuis 1997</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- UIKIT framework -->
+        <link rel="stylesheet" href="css/uikit.css" />
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+        <!-- Custom JS and CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!-- Desktop Navbar -->
+        <div class="uk-container uk-visible@s">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <!-- Logo -->
+                    <a class="uk-navbar-item uk-logo" style="font-weight: lighter;" href="index.html">OUR FASHION</a>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <!-- Menu goes here -->
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="uk-active uk-text-bold"><a href="about.html">ABOUT US</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Navbar -->
+        <div class="uk-container uk-hidden@s">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <!-- Logo -->
+                    <a class="uk-navbar-item uk-logo" style="font-weight: lighter;" href="index.html">OUR FASHION</a>
+                </div>
+
+                <div class="uk-navbar-right">
+                            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav" uk-navbar-toggle-icon href="#"></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Offcanvas / Hamburger Menu -->
+        <div id="offcanvas-nav" class="uk-background-muted" uk-offcanvas="flip: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-margin-medium-top">
+                    <!-- close button -->
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <!-- Menu goes here -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="uk-active uk-text-bold"><a href="about.html">ABOUT US</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Navbar -->
+
+        <section id="about">
+            
+            <div class="uk-container uk-margin-top uk-margin-remove-left uk-padding " uk-grid>
+                <!-- images on the left -->
+                <!-- change to slideshow later -->
+                <div class="uk-width-1-2@m uk-height-1-1 uk-visible@m uk-padding-remove fadeIn">
+                    <img src="images/about-v.jpg" alt="" width="100%">
+                </div>
+
+                <div class="uk-width-1-1 uk-height-1-1 uk-hidden@m uk-padding-remove fadeIn">
+                    <img src="images/about-h.jpg" alt="" width="100%">
+                </div>
+
+                <!-- about text goes here -->
+                <div class="uk-width-1-2@m">
+                    <h1 class="uk-text-bold fadeInUp">ABOUT OUR FASHION</h1>
+                    <h2 class="fadeInUp">"Fashion is something that comes from within you"<p style="font-weight: lighter; font-size: medium"> - Ralph Lauren</p></h2>
+                    <h4 class="fadeInUp uk-text-justify">&emsp;&emsp;For two years our studio has been the professional fashion photography choice for everyone who love fashion and has their own style. We dedicated to fashion , music , art and youth culture. Our Fashion Studio was founded by Photographer Ploychompoo Kulwatthamrong , Wimwipa Phonwa , Piyawat Jarunpong and our honor editor Bosch Boonpt and Buntita Homraruen in 2015. The first collection is Minimal Collection that collaboration with Coppia Brand. OUR FASHION is deserve to everyone who has they own fashion and own style.</h4>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer Start HERE -->
+        <section id="footer">
+            <hr>
+            <div class="uk-container">
+                <!-- Desktop Tablet Footer -->
+                <div class="uk-width-1-1 uk-visible@s" uk-grid>
+
+                    <div class="uk-width-expand@s">
+                        <p class="uk-margin-remove" style="font-weight: lighter;">OUR FASHION</p>
+                        <p class="uk-margin-remove" style="font-size: 80%;">&copy; Copyright 2017</p>
+                    </div>
+
+                    <div class="uk-width-1-5@s uk-text-center">
+                        <a class="flink" href="index.html">Home</a><br>
+                        <a class="flink" href="portfolio.html">Portfolio</a>
+                    </div>
+
+                    <div class="uk-width-1-5@s uk-text-center">
+                        <a class="flink" href="about.html">About Us</a><br>
+                        <a class="flink" href="contact.html">Contact</a>
+                    </div>
+
+                    <div class="uk-width-expand@s uk-text-right">
+                        <a class="flink" href=""><i uk-icon="icon: facebook"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: twitter"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mobile Footer -->
+                <div class="uk-width-1-1 uk-hidden@s uk-margin-remove" uk-grid>
+
+                    <div>
+                        <p class="uk-margin-remove" style="font-weight: lighter;">OUR FASHION</p>
+                        <p class="uk-margin-remove" style="font-size: 80%;">&copy; Copyright 2017</p>
+                    </div>
+
+                    <div class="position-right">
+                        <a class="flink" href=""><i uk-icon="icon: facebook"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: twitter"></i></a>&emsp;
+                        <a class="flink" href=""><i uk-icon="icon: instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END footer -->
+
+
+        <!-- Custom JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
